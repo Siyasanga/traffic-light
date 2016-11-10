@@ -1,5 +1,4 @@
 captureTimeChange(captureTrafficLightChange);
-
 function captureTrafficLightChange(number){
     //write your code here!
     console.log(number);
@@ -7,13 +6,10 @@ function captureTrafficLightChange(number){
     if(number > 40){
       stop();
     }
-    else if(number > 30 && number < 40){
+    else if(number > 30 && number <= 40){
       caution();
     }
     else{
       go();
     }
 }
-// ****************************************************************************
-// **************** THis is for automatic color switch ************************
-// ****************************************************************************

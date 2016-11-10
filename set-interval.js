@@ -7,6 +7,7 @@ function showNumber(num){
     }
     //console.log(number);
     number.innerHTML = counter;
+    captureTrafficLightChange(num);
 }
 
 function interval(){

@@ -15,15 +15,15 @@ function switchOn(className){
   var redLight = document.querySelector(className);
   redLight.classList.add('on');
 }
-// passes the '.go' classname to switchOn(classname)
+// Switches on the go light by passing the '.go' classname to switchOn(classname)
 function go(){
   switchOn('.go');
 }
-// passes the '.stop' classname to switchOn(classname)
+// Switches on the stop light by passing the '.stop' classname to switchOn(classname)
 function stop(){
   switchOn('.stop');
 }
-// passes the '.caution' classname to switchOn(classname)
+// Switches on the caution light by passing the '.caution' classname to switchOn(classname)
 function caution(){
   switchOn('.caution');
 }
@@ -44,22 +44,3 @@ function captureTimeChange(cb){
     }, 0)
   });
 }
-
-/*
-var counter = 60;
-setInterval(function(){
-  counter--;
-  if (counter > 40){
-    stop();
-  }
-  else if (counter < 40 && counter > 20){
-    go();
-  }
-  else{
-    carefull();
-  }
-  if (counter === 0){
-    counter = 60;
-  }
-}, 500);
-*/
